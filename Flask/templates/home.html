@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Home</title>
+
+        <link rel="stylesheet" href="{{url_for('static', filename='css/nav_bar.css')}}">
+        <style>
+            body{
+                background-image: url("{{url_for('static', filename='images/background.jpg')}}"); 
+                background-repeat: no-repeat; 
+                background-position: center;
+                background-size:cover;
+                background-attachment: fixed;
+                margin: 0;
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            p{
+                color: whitesmoke;
+                margin: 0;
+                padding: 0;
+                position:fixed;
+                left: 100px;
+            }
+        </style>
+    </head>
+    
+    <div class = 'topnav' id = 'nav'>
+        <a method = 'GET' href="/">Home</a>|
+        <a method = 'GET' href="/login">Login</a>|
+        <a method = 'GET' href="/sign_up">Sign up</a>
+    </div>    
+    
+    <body>
+        <b><p style="font-size: 70px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; top: 460px;">Next-Gen Parking Assistance</p>
+        <b><p style="font-size: 1.7em; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;top: 540px;">Revolutionizing Car Parking With Futuristic AI</p></b>
+    </body>
+    
+</html>    

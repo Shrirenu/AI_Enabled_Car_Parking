@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Model</title>
+
+        <link rel="stylesheet" href="{{url_for('static', filename='css/nav_bar.css')}}">
+        <style>
+            body{
+                background-image: url("{{url_for('static', filename='images/background.jpg')}}"); 
+                background-repeat: no-repeat; 
+                background-position: center;
+                background-size:cover;
+                background-attachment: fixed;
+                margin: 0;
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .op1{
+            display: block;
+            width: 300px;
+            height: 100px;
+            background: gray;
+            transform: translateX(160%);
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            line-height: 60px;
+            font-size: xx-large;
+            }
+        </style>
+    </head>
+    
+    <div class = 'topnav' id = 'nav'>
+        <a method = 'GET' href="/">Logout</a>
+    </div>    
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <body>
+        <button class="op1"><a style="color: rgb(255, 255, 255);"  method = 'GET' href="/predict_live">Click Here</a></button>
+    </body>
+</html>    
